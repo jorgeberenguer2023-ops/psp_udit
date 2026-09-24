@@ -5,13 +5,19 @@ public class Main {
     
       System.out.println("---INNICIANDO UDITVERSO---");
 
+      long inicio = System.currentTimeMillis();
+
         ArrayList<Episodio> catalogo = new ArrayList();
 
-        catalogo.add(new Episodio("Diseño 3D - Intro", 45));
-        catalogo.add(new Episodio("Animacion", 60));
-        catalogo.add(new Episodio("Texturas", 50));
 
-        long inicio = System.currentTimeMillis();
+        Plataforma plataforma = new Plataforma();
+        plataforma.agregarEpisodio(new Episodio("Diseño 3D - Intro", 45));
+        plataforma.agregarEpisodio(new Episodio("Animacion", 60));  
+        plataforma.agregarEpisodio(new Episodio("Texturas", 50));
+        plataforma.agregarEpisodio(new Episodio("Casero", 60));
+        plataforma.agregarEpisodio(new Episodio("Videojuegos", 50));
+
+        plataforma.procesarCatalogo();
 
         for(Episodio ep : catalogo){
             ep.procesar();

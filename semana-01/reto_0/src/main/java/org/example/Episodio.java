@@ -15,7 +15,7 @@ public class Episodio {
 
     //METODO
 
-    public voi procesar(){
+    public void procesar(){
         System.out.println("iniciando procesamiento de"+ this.titulo +".....");
         try {
             Thread.sleep(2000);
