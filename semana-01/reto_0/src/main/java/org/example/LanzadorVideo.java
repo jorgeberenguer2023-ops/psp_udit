@@ -1,0 +1,26 @@
+package org.example;
+
+import java.io.IOException;
+
+public class LanzadorVideo {
+    public static void main(String[] args) {
+        try{
+        System.out.println("Solicitando al SO la creacion de un proceso nativo ...");
+        // 1. ProcessBuilder
+        //
+        ProcessBuilder pb = new ProcessBuilder ("cmd", "/c", "start", "https://www.youtube.com/watch?v=1-ThRcHF3Dg&list=RD1-ThRcHF3Dg&start_radio=1");
+        // 2. start ()
+        Process proceso = pb.start();
+        System.out.println("Proceso en ejecucion. PIB"+ proceso.pid());
+        // 3. waitFor()
+        // 0 significa cierre forzoso
+        System.out.println("El proceso externo finalizo con codigo");
+        } catch (IOException e) {
+
+            System.out.println("Error: el sistema operativo no encuentra el programa");
+
+        } 
+
+
+    }
+}
