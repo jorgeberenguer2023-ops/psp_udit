@@ -1,17 +1,23 @@
 package org.example;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList; 
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+    public static void main(String[] args) {
+    
+      System.out.println("---INNICIANDO UDITVERSO---");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+        ArrayList<Episodio> catalogo = new ArrayList();
+
+        catalogo.add(new Episodio("Diseño 3D - Intro", 45));
+        catalogo.add(new Episodio("Animacion", 60));
+        catalogo.add(new Episodio("Texturas", 50));
+
+        long inicio = System.currentTimeMillis();
+
+        for(Episodio ep : catalogo){
+            ep.procesar();
         }
+        long fin = System.currentTimeMillis();
+        long totalSegundos=(fin - inicio)/1000;
+        System.out.print("Tiempo total"+ totalSegundos);
     }
 }
