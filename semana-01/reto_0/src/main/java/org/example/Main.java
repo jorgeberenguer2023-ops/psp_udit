@@ -24,6 +24,6 @@ public class Main {
         }
         long fin = System.currentTimeMillis();
         long totalSegundos=(fin - inicio)/1000;
-        System.out.print("Tiempo total"+ totalSegundos);
+        System.out.print("Tiempo total: "+ totalSegundos + " segundos");
     }
 }
