@@ -70,7 +70,7 @@ public class UDITflixMonitor {
             }
         }
 
-        // 8️⃣ Mensaje final
+        // 10 Mensaje final
         System.out.println("COMPROBACIÓN FINALIZADA");
     }
 }
