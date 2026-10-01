@@ -13,11 +13,11 @@ public class UDITflixMonitor {
         // 1️ Matriz de dos dimensiones con nombre y dirección
         // Cada fila: [nombre del vídeo, dirección a comprobar]
         String[][] videos = {
-                {"Animación 3D", "192.168.0.555"},   // dirección inexistente  CAÍDO
-                {"Videojuegos", "10.0.0.123"},       // dirección inexistente  CAÍDO
-                {"Kotlin", "55.55.55.55"},           // dirección inexistente  Caido
-                {"Android", "127.0.0.1"},            // dirección válida  ACTIVO
-                {"Flutter", "127.0.0.1"}             // dirección válida  ACTIVO
+                {"Animación 3D", "192.168.0.555"},
+                {"Videojuegos", "10.0.0.123"},
+                {"Kotlin", "55.55.55.55"},
+                {"Android", "127.0.0.1"},
+                {"Flutter", "127.0.0.1"}
         };
 
         // 2 Bucle for para recorrer la matriz
@@ -62,7 +62,7 @@ public class UDITflixMonitor {
                 if (activo) {
                     System.out.println("ESTADO: ACTIVO\n");
                 } else {
-                    System.out.println("ESTADO: CAÍDO\n");
+                    System.out.println("ESTADO: CAIDO\n");
                 }
 
             } catch (Exception e) {
