@@ -15,7 +15,7 @@ public class UDITflixMonitor {
         String[][] videos = {
                 {"Animación 3D", "127.0.0.x"},
                 {"Videojuegos", "127.0.0.x"},
-                {"Kotlin", "127.0.0.1"},
+                {"Kotlin", "127.0.0.x"},
                 {"Android", "127.0.0.1"},
                 {"Flutter", "127.0.0.1"}
         };
