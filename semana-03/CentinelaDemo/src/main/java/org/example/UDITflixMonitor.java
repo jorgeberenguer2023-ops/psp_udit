@@ -13,9 +13,9 @@ public class UDITflixMonitor {
         // 1️ Matriz de dos dimensiones con nombre y dirección
         // Cada fila: [nombre del vídeo, dirección a comprobar]
         String[][] videos = {
-                {"Animación 3D", "192.168.0.555"},
-                {"Videojuegos", "10.0.0.123"},
-                {"Kotlin", "55.55.55.55"},
+                {"Animación 3D", "127.0.0.x"},
+                {"Videojuegos", "127.0.0.x"},
+                {"Kotlin", "127.0.0.x"},
                 {"Android", "127.0.0.1"},
                 {"Flutter", "127.0.0.1"}
         };
