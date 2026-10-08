@@ -45,7 +45,8 @@ Un programa de consola en Java que simula la primera fase de una auditoría medi
       Bloc de Notas            Calculadora
 ```
 
-> 📸 *Aquí pondré una captura de mi ejecución antes de entregar.*
+> 📸 <img width="808" height="433" alt="Captura de pantalla 2026-10-08 202739" src="https://github.com/user-attachments/assets/20a5962f-044a-49c9-83c6-9b0a76d57c45" />
+
 
 ---
 
